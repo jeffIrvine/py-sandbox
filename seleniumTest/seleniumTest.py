@@ -17,5 +17,6 @@ search.send_keys(Keys.RETURN)
 time.sleep(3)
 product_button = driver.find_element_by_xpath('//*[@id="product-search-results"]/div[2]/div/div[2]/div[2]/div[1]')
 product_button.click()
+time.sleep(1)
+print(driver.current_url)
 
-time.sleep(5)
