@@ -14,4 +14,8 @@ search = driver.find_element_by_name("q")
 search.send_keys("Aeron")
 search.send_keys(Keys.RETURN)
 
+time.sleep(3)
+product_button = driver.find_element_by_xpath('//*[@id="product-search-results"]/div[2]/div/div[2]/div[2]/div[1]')
+product_button.click()
+
 time.sleep(5)
