@@ -1,4 +1,5 @@
 from selenium import webdriver
+from Chair import Chair
 from selenium.webdriver.common.keys import Keys
 import time
 
@@ -19,4 +20,4 @@ product_button = driver.find_element_by_xpath('//*[@id="product-search-results"]
 product_button.click()
 time.sleep(1)
 print(driver.current_url)
-
+Chair.insert({'url': driver.current_url})
